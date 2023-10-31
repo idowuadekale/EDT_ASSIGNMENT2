@@ -1,0 +1,119 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    font-family: "Poppins", sans-serif;
+}    
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(141deg, #686ab6 0%, #221fdb 51%, #090450 75%);
+}
+
+.main-container {
+    background: #fff;
+    border-radius: 15px;
+    margin: auto 9rem;
+    padding: 15px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
+    /* Added animation */
+    /* animation-name: rotation; 
+    animation-duration: 4s; */
+}
+
+/* Animation Styling */
+/* @keyframes rotation {
+    0%   {
+        background-color:red;
+          transform: rotate(20deg);
+        }
+  } */
+
+.main-container .heading {
+    text-align: center;
+    color:#eaebf5;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.hr {
+    width: 10rem;
+    margin: 10px auto;
+    border: 1px solid #00008b81;
+}
+
+.main-container .members {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main-container .members .team-member {
+    margin: 8px;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.main-container .members .team-member:hover {
+    transform: scale(1.1);
+}
+
+.main-container .members .team-member .img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+h4,
+p {
+    text-align: center;
+    font-size: 12px; 
+    margin: 7px;
+}
+
+
+.main-container .members .team-member:hover .pre-img{
+    display: none;
+}
+
+.main-container .members .team-member .pre-img{
+    display: block;
+}
+
+
+.main-container .members .team-member:hover .sh-img{
+    display: block;
+    animation-name: img-animation; 
+    animation-duration: 4s;
+}
+.main-container .members .team-member .sh-img{
+    display: none;
+}
+
+@keyframes img-animation {
+    0%   {
+          transform: rotate(30deg);
+        }
+    25%  {
+        transform: rotate(50deg);
+    }
+  }
+
+  @media (max-width:992px) {
+    .main-container{        
+        margin: auto 4rem;
+        margin-top: 20px;
+    }
+
+    .main-container .members .team-member .img {
+      margin: auto;
+    }
+    }
