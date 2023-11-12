@@ -98,6 +98,32 @@ p {
     display: none;
 }
 
+.collapsible {
+    text-align: center;
+    background-color: #41301b;
+    padding: 18px;
+    outline: none;
+    /* border: none; */
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 700;
+    animation-name: shiftEX;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    text-decoration: none;
+  }
+ 
+  
+  .active, .collapsible:hover {
+    background-color: #cc919b;
+  }
+  
+  .content {
+    font-size: 15px;
+    color: #41301b;
+    font-weight: 700;
+  }
+
 @keyframes img-animation {
     0%   {
           transform: rotate(30deg);
